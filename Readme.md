@@ -29,6 +29,22 @@ Notes:
 - if the macro behaves in an odd way, try changing the `word wrap` setting of the file you're working on.
 
 
+## IntelliJ IDEA Custom Keybindings
+Set of custom keyboard shortcuts that helps you become more productive, especially when paired with [Anne Pro 2](https://www.annepro.net/products/anne-pro-2) keyboard macros. 
+
+|                 Command                 |          Key binding          |
+|-----------------------------------------|-------------------------------|
+| Move caret to text start                | `⌥` + `shift` + `m`, `↑`      |
+| Move caret to text start with selection | `ctrl  ` + `shift` + `m`, `↑` |
+| Move caret to text end                  | `⌥` + `shift` + `m`, `↓`      |
+| Move caret to text end with selection   | `ctrl  ` + `shift` + `m`, `↓` |
+| Close tabs to the left                  | `⌘` + `shift` + `x`, `←`      |
+| Close tabs to the right                 | `⌘` + `shift` + `x`, `→`      |
+| Split vertically                        | `⌥` + `shift` + `s`, `v`      |
+| Split horizontally                      | `⌥` + `shift` + `s`, `h`      |
+| Git annotate                            | `⌥` + `shift` + b             |
+
+
 ## Bash Scripts
 
 ### Findr
