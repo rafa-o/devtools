@@ -42,7 +42,8 @@ Set of custom keyboard shortcuts that helps you become more productive, especial
 | Close tabs to the right                 | `⌘` + `shift` + `x`, `→`      |
 | Split vertically                        | `⌥` + `shift` + `s`, `v`      |
 | Split horizontally                      | `⌥` + `shift` + `s`, `h`      |
-| Git annotate                            | `⌥` + `shift` + b             |
+| Git annotate                            | `⌥` + `shift` + `b`           |
+| Run with coverage                       | `ctrl` + `c`                  |
 
 
 ## Bash Scripts
