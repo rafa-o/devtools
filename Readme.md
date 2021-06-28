@@ -46,6 +46,26 @@ Set of custom keyboard shortcuts that helps you become more productive, especial
 | Run with coverage                       | `ctrl` + `c`                  |
 
 
+## [Alfred](https://www.alfredapp.com/) Workflows
+### Links
+A workflow to easily open links from a custom list or simply copy the links to your clipboard. It loads the entries based on a `csv` file containing the links you want to have available, and the default action, that can be `open` or `copy-to-clipboard`.
+![Links Alfred Workflow](https://github.com/rafaeloliveira1337/devtools/blob/img/img/links_workflow.gif)
+
+By default, holding `alt` modifies the default action to the opposite. (e.g.: if default action is "open", by holding `alt`, it'll just copy it to the clipboard, and vice-versa)
+
+#### Setting up
+Import the workflow in alfred, and set the `links_csv` environment variable pointing to your `csv` file containing the links.
+Here's a sample `csv` file:
+```csv
+title,defaultAction,url
+QR Code Decoder,copy-to-clipboard,https://zxing.org/w/decode.jspx
+JSON Editor,open,https://jsoneditoronline.org
+PNG to PDF,copy-to-clipboard,https://png2pdf.com
+Diff Checker,open,https://www.diffchecker.com/
+Python Formatter,open,https://www.cleancss.com/python-beautify/
+```
+
+
 ## Bash Scripts
 
 ### Findr
