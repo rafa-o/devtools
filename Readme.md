@@ -50,6 +50,17 @@ Set of custom keyboard shortcuts that helps you become more productive, especial
 | Run with coverage                                                         | `ctrl` + `c`                 |
 
 
+## Anne Pro 2 settings
+### Default keymap
+![Default keymaps for each layer](https://github.com/rafaeloliveira1337/devtools/blob/img/img/anne_pro_default_mapping.png)
+
+### Macros
+#### FN1 layer macros
+![FN1 layer macros](https://github.com/rafaeloliveira1337/devtools/blob/img/img/macros_fn1.png)
+
+#### FN2 layer macros
+![FN1 layer macros](https://github.com/rafaeloliveira1337/devtools/blob/img/img/macros_fn2.png)
+
 ## [Alfred](https://www.alfredapp.com/) Workflows
 ### Links
 A workflow to easily open links from a custom list or simply copy the links to your clipboard. It loads the entries based on a `csv` file containing the links you want to have available, and the default action, that can be `open` or `copy-to-clipboard`.
