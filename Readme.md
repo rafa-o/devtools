@@ -32,18 +32,22 @@ Notes:
 ## IntelliJ IDEA Custom Keybindings
 Set of custom keyboard shortcuts that helps you become more productive, especially when paired with [Anne Pro 2](https://www.annepro.net/products/anne-pro-2) keyboard macros. 
 
-|                 Command                 |          Key binding          |
-|-----------------------------------------|-------------------------------|
-| Move caret to text start                | `⌥` + `shift` + `m`, `↑`      |
-| Move caret to text start with selection | `ctrl  ` + `shift` + `m`, `↑` |
-| Move caret to text end                  | `⌥` + `shift` + `m`, `↓`      |
-| Move caret to text end with selection   | `ctrl  ` + `shift` + `m`, `↓` |
-| Close tabs to the left                  | `⌘` + `shift` + `x`, `←`      |
-| Close tabs to the right                 | `⌘` + `shift` + `x`, `→`      |
-| Split vertically                        | `⌥` + `shift` + `s`, `v`      |
-| Split horizontally                      | `⌥` + `shift` + `s`, `h`      |
-| Git annotate                            | `⌥` + `shift` + `b`           |
-| Run with coverage                       | `ctrl` + `c`                  |
+|                                  Command                                  |         Key binding          |
+|---------------------------------------------------------------------------|------------------------------|
+| Move caret to file start                                                  | `⌥` + `shift` + `m`, `↑`     |
+| Move caret to file start with selection                                   | `ctrl` + `shift` + `m`, `↑`  |
+| Move caret to file end                                                    | `⌥` + `shift` + `m`, `↓`     |
+| Move caret to file end with selection                                     | `ctrl ` + `shift` + `m`, `↓` |
+| Move Caret to next word in different "CamelHumps" mode                    | `⌥` + `.`                    |
+| Move Caret to next word with selection in different "CamelHumps" mode     | `ctrl` + `⌥` + `.`           |
+| Move Caret to previous word in different "CamelHumps" Mode                | `⌥` + `,`                    |
+| Move Caret to previous word with selection in different "CamelHumps" mode | `ctrl` + `⌥` + `,`           |
+| Close files to the left                                                   | `⌘` + `shift` + `x`, `←`     |
+| Close files to the right                                                  | `⌘` + `shift` + `x`, `→`     |
+| Split vertically                                                          | `⌥` + `shift` + `s`, `v`     |
+| Split horizontally                                                        | `⌥` + `shift` + `s`, `h`     |
+| Git annotate                                                              | `⌥` + `shift` + `b`          |
+| Run with coverage                                                         | `ctrl` + `c`                 |
 
 
 ## [Alfred](https://www.alfredapp.com/) Workflows
