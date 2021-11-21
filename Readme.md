@@ -56,10 +56,10 @@ Set of custom keyboard shortcuts that helps you become more productive, especial
 
 ### Macros
 #### FN1 layer macros
-![FN1 layer macros](https://github.com/rafaeloliveira1337/devtools/blob/img/img/macros_fn1.png)
+![FN1 layer macros](https://github.com/rafaeloliveira1337/devtools/blob/img/img/fn1_macros.png)
 
 #### FN2 layer macros
-![FN2 layer macros](https://github.com/rafaeloliveira1337/devtools/blob/img/img/macros_fn2.png)
+![FN2 layer macros](https://github.com/rafaeloliveira1337/devtools/blob/img/img/fn2_macros.png)
 
 ## [Alfred](https://www.alfredapp.com/) Workflows
 ### Links
