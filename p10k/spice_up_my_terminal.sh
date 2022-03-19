@@ -13,27 +13,26 @@
 # install required software packages. If they're already installed, nothing will change.
 brew install zsh exa bat fzf
 
-# finish setting up fzf
-yes | $(brew --prefix)/opt/fzf/install
-
 # installs Oh My Zsh if oh-my-zsh folder doesn't exist under user's home
-if [ ! -d $HOME/.oh-my-zsh ]; then
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+  # prevents oh my zsh's installer from interrupting the script by running zsh right after installing
+  export RUNZSH=no
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-else
+fi
 
 # download and install MesloLGS NF font
-(cd /Library/Fonts/; curl -o "MesloLGS NF Regular.tff" https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf;curl -o "MesloLGS NF Bold.tff" https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf; curl -o "MesloLGS NF Italic.tff" https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf; curl -o "MesloLGS NF Bold Italic.tff" https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf;)
+(cd /Library/Fonts; curl -o "MesloLGS NF Regular.ttf" 'https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf' --compressed; curl -o "MesloLGS NF Bold.ttf" 'https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold.ttf' --compressed; curl -o "MesloLGS NF Italic.ttf" 'https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Italic.ttf' --compressed; curl -o "MesloLGS NF Bold Italic.ttf" 'https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold%20Italic.ttf' --compressed;)
 
 # clones Powerlevel10k if there's no powerlevel10k folder yet under ~/.oh-my-zsh
-if [ ! -d $HOME/.oh-my-zsh/custom/themes/powerlevel10k ]; then
-    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-else
+if [ ! -d "$HOME/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
+fi
 
 # replaces the ZSH_THEME line of your ~/.zshrc file with: ZSH_THEME="powerlevel10k/powerlevel10k" 
 sed -i '' '/^ZSH_THEME=/s/.*/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc
 
 # copies my Powerlevel10k configuration
-curl https://raw.githubusercontent.com/rafaeloliveira1337/devtools/master/p10k/.p10k.zsh >| ~/.p10k.zsh
+curl https://raw.githubusercontent.com/rafa-o/devtools/master/p10k/.p10k.zsh >| ~/.p10k.zsh
 
 # sources ~/.p10k.zsh on ~/.zshrc
 if ! grep -Fq -m 1 "source ~/.p10k.zsh" ~/.zshrc; then
@@ -62,11 +61,16 @@ printf '# Set the theme to "OneHalfLight"
 --paging=never
 ' >| ~/.bat.conf
 
-# sets BAT_CONFIG_PATH on ~/.zshrc if it's not already there
+# sets BAT_CONFIG_PATH on ~/.zshrc if it's not already there and set alias
 if ! grep -Fq -m 1 "BAT_CONFIG_PATH" ~/.zshrc; then
   printf '\n\nexport BAT_CONFIG_PATH=~/.bat.conf' >> ~/.zshrc
+  printf '\n\nalias cat="bat -n"' >> ~/.zshrc
 fi
 
+# finish setting up fzf
+yes | $(brew --prefix)/opt/fzf/install
+
+# done installing and setting up things
 read -n 1 -s -r -p "
 
 All done. 😎
