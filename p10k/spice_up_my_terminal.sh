@@ -10,6 +10,9 @@
 #
 #############################################################################################
 
+# installs Homebrew if brew command is not available
+command -v brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 # install required software packages. If they're already installed, nothing will change.
 brew install zsh exa bat fzf
 
