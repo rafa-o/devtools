@@ -5,12 +5,12 @@
 ### Surround with quotes and separate by comma in the same line
 This macro allow you to easily wrap lines of text in single quotes, puts them in the same line, separated by a comma, and copies it to your clipboard - very handy when needing to prepare a set of database IDs to be used on a second query. 
 
-![Wrap in single quotes](https://github.com/rafaeloliveira1337/devtools/blob/img/img/wrap-in-quotes.gif)
+![Wrap in single quotes](https://github.com/rafa-o/devtools/blob/img/img/wrap-in-quotes.gif)
 
 ### Surround with double quotes and separate by comma
 This macro allow you to easily wrap lines of text in double quotes and adds a comma in the end of the line, and also copies it to the clipboard.
 
-![Wrap in double quotes](https://github.com/rafaeloliveira1337/devtools/blob/img/img/wrap-in-double-quotes.gif)
+![Wrap in double quotes](https://github.com/rafa-o/devtools/blob/img/img/wrap-in-double-quotes.gif)
 
 ### How to set up (OSX)
 
@@ -52,19 +52,19 @@ Set of custom keyboard shortcuts that helps you become more productive, especial
 
 ## Anne Pro 2 settings
 ### Default keymap
-![Default keymaps for each layer](https://github.com/rafaeloliveira1337/devtools/blob/img/img/anne_pro_default_mapping.png)
+![Default keymaps for each layer](https://github.com/rafa-o/devtools/blob/img/img/anne_pro_default_mapping.png)
 
 ### Macros
 #### FN1 layer macros
-![FN1 layer macros](https://github.com/rafaeloliveira1337/devtools/blob/img/img/fn1_macros.png)
+![FN1 layer macros](https://github.com/rafa-o/devtools/blob/img/img/fn1_macros.png)
 
 #### FN2 layer macros
-![FN2 layer macros](https://github.com/rafaeloliveira1337/devtools/blob/img/img/fn2_macros.png)
+![FN2 layer macros](https://github.com/rafa-o/devtools/blob/img/img/fn2_macros.png)
 
 ## [Alfred](https://www.alfredapp.com/) Workflows
 ### Links
 A workflow to easily open links from a custom list or simply copy the links to your clipboard. It loads the entries based on a `csv` file containing the links you want to have available, and the default action, that can be `open` or `copy-to-clipboard`.
-![Links Alfred Workflow](https://github.com/rafaeloliveira1337/devtools/blob/img/img/links_workflow.gif)
+![Links Alfred Workflow](https://github.com/rafa-o/devtools/blob/img/img/links_workflow.gif)
 
 By default, holding `alt` modifies the default action to the opposite. (e.g.: if default action is "open", by holding `alt`, it'll just copy it to the clipboard, and vice-versa)
 
@@ -109,5 +109,5 @@ Found 'printf' in 1 files.
 
 
 ## Quality Certificate
-<img src="https://github.com/rafaeloliveira1337/devtools/blob/img/img/works_on_my_machine.png" width="350" alt="Works on my machine" /> ![Kitty](https://github.com/rafaeloliveira1337/devtools/blob/img/img/kitty_paws.gif)
+<img src="https://github.com/rafa-o/devtools/blob/img/img/works_on_my_machine.png" width="350" alt="Works on my machine" /> ![Kitty](https://github.com/rafa-o/devtools/blob/img/img/kitty_paws.gif)
 
