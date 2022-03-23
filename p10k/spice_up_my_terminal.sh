@@ -3,7 +3,7 @@
 #############################################################################################
 #
 # Script to spice up the terminal with Zsh, Oh My Zsh, Powerlevel10k, exa, bat and fzf.
-# More details on accompanying article: https://linkedin.com/pulse/article-url
+# More details on accompanying article: https://www.linkedin.com/pulse/5min-guide-awesome-terminal-rafa-oliveira 
 #
 #
 # Author: Rafa Oliveira
